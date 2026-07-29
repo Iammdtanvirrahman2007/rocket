@@ -8,7 +8,7 @@ export function renderHangarPage() {
 
         <div class="hangar-title">
 
-            <h1>Rocket Assembly Hangar</h1>
+            <h1>🚀 Rocket Assembly Hangar</h1>
 
             <p>Design • Assemble • Analyze • Launch</p>
 
@@ -32,15 +32,21 @@ export function renderHangarPage() {
 
             <h2>Parts Library</h2>
 
+            <!-- Nose -->
+
             <div class="part-card">
 
                 <h3>🔺 Nose Cone</h3>
 
                 <span>Mass : 120 kg</span>
 
-                <button>Add</button>
+                <button data-part="nose">
+                    Add
+                </button>
 
             </div>
+
+            <!-- Fuel Tank -->
 
             <div class="part-card">
 
@@ -48,27 +54,37 @@ export function renderHangarPage() {
 
                 <span>Mass : 350 kg</span>
 
-                <button>Add</button>
+                <button data-part="tank">
+                    Add
+                </button>
 
             </div>
+
+            <!-- Engine -->
 
             <div class="part-card">
 
-                <h3>⚙ Engine</h3>
+                <h3>⚙ Main Engine</h3>
 
                 <span>Thrust : 950 kN</span>
 
-                <button>Add</button>
+                <button data-part="engine">
+                    Add
+                </button>
 
             </div>
+
+            <!-- Fins -->
 
             <div class="part-card">
 
                 <h3>🪶 Fins</h3>
 
-                <span>Stability +15%</span>
+                <span>Stability : +15%</span>
 
-                <button>Add</button>
+                <button data-part="fins">
+                    Add
+                </button>
 
             </div>
 
@@ -90,7 +106,7 @@ export function renderHangarPage() {
 
                 <div id="rocketBuilder">
 
-                    <!-- Rocket SVG এখানে তৈরি হবে -->
+                    <!-- Rocket SVG will appear here -->
 
                 </div>
 
@@ -110,7 +126,9 @@ export function renderHangarPage() {
 
                 <span>Height</span>
 
-                <strong id="heightValue">0 m</strong>
+                <strong id="heightValue">
+                    0 m
+                </strong>
 
             </div>
 
@@ -118,7 +136,9 @@ export function renderHangarPage() {
 
                 <span>Mass</span>
 
-                <strong id="massValue">0 kg</strong>
+                <strong id="massValue">
+                    0 kg
+                </strong>
 
             </div>
 
@@ -126,7 +146,9 @@ export function renderHangarPage() {
 
                 <span>Fuel</span>
 
-                <strong id="fuelValue">0 L</strong>
+                <strong id="fuelValue">
+                    0 L
+                </strong>
 
             </div>
 
@@ -134,7 +156,9 @@ export function renderHangarPage() {
 
                 <span>Thrust</span>
 
-                <strong id="thrustValue">0 kN</strong>
+                <strong id="thrustValue">
+                    0 kN
+                </strong>
 
             </div>
 
@@ -142,7 +166,9 @@ export function renderHangarPage() {
 
                 <span>TWR</span>
 
-                <strong id="twrValue">0</strong>
+                <strong id="twrValue">
+                    0
+                </strong>
 
             </div>
 
@@ -150,7 +176,9 @@ export function renderHangarPage() {
 
                 <span>Budget</span>
 
-                <strong id="budgetValue">$0</strong>
+                <strong id="budgetValue">
+                    $0
+                </strong>
 
             </div>
 
@@ -158,22 +186,30 @@ export function renderHangarPage() {
 
     </div>
 
+    <!-- ================================= -->
     <!-- Bottom Toolbar -->
+    <!-- ================================= -->
 
     <div class="hangar-toolbar">
 
-        <button>Undo</button>
+        <button id="undoBtn">
+            Undo
+        </button>
 
-        <button>Redo</button>
+        <button id="redoBtn">
+            Redo
+        </button>
 
-        <button>Reset</button>
+        <button id="resetBtn">
+            Reset
+        </button>
 
-        <button>Save</button>
+        <button id="saveBtn">
+            Save
+        </button>
 
-        <button class="launch-btn">
-
+        <button class="launch-btn" id="launchBtn">
             🚀 Launch
-
         </button>
 
     </div>
