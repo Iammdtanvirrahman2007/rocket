@@ -915,3 +915,168 @@ opacity:0;
 }
 
 }
+/* =====================================
+Mission Dashboard
+===================================== */
+
+.mission-dashboard{
+
+margin-top:70px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+.mission-panel{
+
+background:rgba(12,22,40,.7);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:20px;
+
+padding:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.panel-title{
+
+font-weight:600;
+
+margin-bottom:20px;
+
+color:#67d7ff;
+
+letter-spacing:1px;
+
+}
+
+.green-dot{
+
+display:inline-block;
+
+width:10px;
+
+height:10px;
+
+background:#18ff7a;
+
+border-radius:50%;
+
+margin-right:10px;
+
+box-shadow:0 0 15px #18ff7a;
+
+}
+
+.status-item{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:12px 0;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.online{
+
+color:#33ff99;
+
+font-weight:600;
+
+}
+
+.weather-info{
+
+display:grid;
+
+gap:18px;
+
+}
+
+.weather-info div{
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+.weather-info strong{
+
+color:#4fd7ff;
+
+}
+
+.mission-card h2{
+
+margin-bottom:15px;
+
+}
+
+.launch-btn{
+
+margin-top:20px;
+
+width:100%;
+
+}
+
+/* =====================================
+Terminal
+===================================== */
+
+.terminal-panel{
+
+margin-top:40px;
+
+background:#050b14;
+
+border:1px solid #183049;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 0 40px rgba(0,150,255,.08);
+
+}
+
+.terminal-header{
+
+background:#091827;
+
+padding:15px 20px;
+
+font-weight:600;
+
+color:#76dfff;
+
+}
+
+#terminal{
+
+padding:25px;
+
+font-family:Consolas,monospace;
+
+font-size:.95rem;
+
+color:#67ffad;
+
+line-height:1.8;
+
+white-space:pre-wrap;
+
+}
