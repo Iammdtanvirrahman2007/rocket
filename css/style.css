@@ -888,13 +888,13 @@ translateX(0)
 
 translateY(0)
 
-rotate(-35deg);
+rotate(145deg);
 
 opacity:0;
 
 }
 
-5%{
+10%{
 
 opacity:1;
 
@@ -904,11 +904,11 @@ opacity:1;
 
 transform:
 
-translateX(1800px)
+translateX(-1800px)
 
 translateY(700px)
 
-rotate(-35deg);
+rotate(145deg);
 
 opacity:0;
 
