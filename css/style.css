@@ -595,6 +595,85 @@ footer{
 flex-direction:column;
 
 gap:15px;
+   /* ================= Ripple ================= */
+
+button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.4);
+
+transform:scale(0);
+
+animation:ripple .7s linear;
+
+pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.rocket-preview{
+
+animation:float 5s ease-in-out infinite;
+
+filter:drop-shadow(0 0 25px #33ccff);
+
+}
+
+/* Smooth Page */
+
+.hero,
+.dashboard,
+.quick-grid{
+
+transition:.5s;
+
+}
 
 }
 
