@@ -759,3 +759,64 @@ transform:scaleY(1.4);
 }
 
 }
+/* ================= Earth ================= */
+
+.earth{
+
+position:absolute;
+
+right:-120px;
+
+bottom:-120px;
+
+width:320px;
+
+height:320px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle at 30% 30%,
+
+#69d2ff,
+
+#1877d9,
+
+#081c4a);
+
+box-shadow:
+
+0 0 80px rgba(0,150,255,.4);
+
+opacity:.45;
+
+z-index:-1;
+
+}
+
+/* ================= Moon ================= */
+
+.moon{
+
+position:absolute;
+
+top:40px;
+
+right:180px;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+background:#dddddd;
+
+box-shadow:
+
+0 0 30px rgba(255,255,255,.3);
+
+opacity:.8;
+
+}
