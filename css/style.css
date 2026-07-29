@@ -142,16 +142,15 @@ nav{
 
 /* ================= Hero ================= */
 
-.hero{
-    margin-top:70px;
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:70px;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
+.hero {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 70px;
+    align-items: flex-start; /* লেখাগুলোকে উপরে নিয়ে যাবে */
+    position: relative;
+    /* overflow: hidden; এখান থেকে রিমুভ করা হয়েছে যাতে Earth না কাটে */
 }
-
 .hero::before{
     content:"";
     position:absolute;
@@ -444,18 +443,18 @@ button{
 
 /* ================= Earth ================= */
 
-.earth{
-    position:absolute;
-    right:-120px;
-    bottom:-120px;
-    width:320px;
-    height:320px;
-    border-radius:50%;
+.earth {
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #69d2ff, #1877d9, #081c4a);
-    box-shadow: 0 0 80px rgba(0,150,255,.4);
-    opacity:.45;
-    z-index:-1;
-    pointer-events:none; /* Fixed Overlay */
+    box-shadow: 0 0 80px rgba(0, 150, 255, .4);
+    opacity: .45;
+    z-index: -1; 
+    pointer-events: none;
 }
 
 /* ================= Moon ================= */
@@ -594,19 +593,20 @@ button{
 
 /* ================= HUD PANEL ================= */
 
-.hud-panel{
-    position:static; /* Overlap Fixed Here */
-    margin-bottom:30px;
-    width:100%;
-    max-width:220px;
-    background:rgba(6,18,35,.75);
-    backdrop-filter:blur(18px);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
-    padding:20px;
-    box-shadow:0 0 40px rgba(0,170,255,.12);
+.hud-panel {
+    position: absolute; /* আবার absolute করা হলো */
+    top: -20px;         /* উপরের দিকে পজিশন */
+    right: 0px;         /* ডানদিকে পজিশন */
+    width: 100%;
+    max-width: 220px;
+    background: rgba(6, 18, 35, .75);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 0 40px rgba(0, 170, 255, .12);
+    z-index: 10;        /* রকেটের উপরে দেখানোর জন্য */
 }
-
 .hud-header{
     font-size:.9rem;
     letter-spacing:2px;
