@@ -475,13 +475,15 @@ button{
 /* ================= Shooting Stars ================= */
 
 .shoot{
-    position:absolute;
-    width:180px;
-    height:2px;
-    background: linear-gradient( 90deg, white, transparent);
-    opacity:.8;
-    transform:rotate(145deg);
-    animation:shoot 8s linear infinite;
+    position: absolute;
+    width: 180px;
+    height: 2px;
+    background: linear-gradient(90deg, white, transparent);
+    opacity: .8;
+    transform: rotate(145deg);
+    animation: shoot 8s linear infinite;
+    z-index: 1; /* এটি যোগ করে দিতে পারো যাতে ওপরের স্তরে থাকে */
+    pointer-events: none;
 }
 
 .shooting1{ top:80px; left:-250px; animation-delay:0s; }
