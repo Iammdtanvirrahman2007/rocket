@@ -678,3 +678,84 @@ transition:.5s;
 }
 
 }
+/* ================= Rocket ================= */
+
+.rocket-svg{
+
+width:180px;
+
+animation:rocketFloat 5s ease-in-out infinite;
+
+filter:drop-shadow(0 0 30px rgba(0,190,255,.4));
+
+}
+
+@keyframes rocketFloat{
+
+0%{
+
+transform:translateY(0px) rotate(-2deg);
+
+}
+
+50%{
+
+transform:translateY(-18px) rotate(2deg);
+
+}
+
+100%{
+
+transform:translateY(0px) rotate(-2deg);
+
+}
+
+}
+
+.flame{
+
+transform-origin:center top;
+
+animation:flame .15s infinite alternate;
+
+}
+
+.flame2{
+
+transform-origin:center top;
+
+animation:flame2 .1s infinite alternate;
+
+}
+
+@keyframes flame{
+
+from{
+
+transform:scaleY(.8);
+
+}
+
+to{
+
+transform:scaleY(1.2);
+
+}
+
+}
+
+@keyframes flame2{
+
+from{
+
+transform:scaleY(.7);
+
+}
+
+to{
+
+transform:scaleY(1.4);
+
+}
+
+}
