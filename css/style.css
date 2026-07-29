@@ -597,8 +597,8 @@ button{
 
 .hud-panel {
     position: absolute; /* আবার absolute করা হলো */
-    top: 10px;         /* উপরের দিকে পজিশন */
-    right: 5px;         /* ডানদিকে পজিশন */
+    top: -30px;         /* উপরের দিকে পজিশন */
+    right: 20px;         /* ডানদিকে পজিশন */
     width: 100%;
     max-width: 220px;
     background: rgba(6, 18, 35, .75);
